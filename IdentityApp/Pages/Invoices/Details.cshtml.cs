@@ -54,5 +54,20 @@ namespace IdentityApp.Pages.Invoices
 
             return Page();
         }
+
+        public async Task<IActionResult> OnPostAsync(string? changeStatus)
+        {
+            if(changeStatus == null)
+            {
+                return BadRequest();
+            }
+
+            var isAdmin = User.IsInRole(Constants.InvoiceAdminsRole);
+
+            if (isAdmin == false)
+                return Forbid();
+
+            return RedirectToPage("./Index");
+        }
     }
 }

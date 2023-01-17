@@ -15,13 +15,3 @@
         public InvoiceStatus Status { get; set; }
     }
 }
-
-namespace IdentityApp
-{
-    public enum InvoiceStatus
-    {
-        Submitted,
-        Approved,
-        Rejected
-    }
-}
