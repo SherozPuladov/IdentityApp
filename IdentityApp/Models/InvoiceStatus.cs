@@ -4,7 +4,7 @@ namespace IdentityApp
     public enum InvoiceStatus
     {
         Submitted,
-        Approved,
-        Rejected
+        Approve,
+        Reject
     }
 }

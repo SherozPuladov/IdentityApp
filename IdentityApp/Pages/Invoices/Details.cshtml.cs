@@ -32,14 +32,11 @@ namespace IdentityApp.Pages.Invoices
                 return NotFound();
             }
 
-            var invoice = await Context.Invoice.FirstOrDefaultAsync(m => m.InvoiceId == id);
-            if (invoice == null)
+            Invoice = await Context.Invoice.FirstOrDefaultAsync(m => m.InvoiceId == id);
+            
+            if (Invoice == null)
             {
                 return NotFound();
-            }
-            else 
-            {
-                Invoice = invoice;
             }
 
             var isCreator = await AuthorizationService.AuthorizeAsync(
@@ -55,17 +52,28 @@ namespace IdentityApp.Pages.Invoices
             return Page();
         }
 
-        public async Task<IActionResult> OnPostAsync(string? changeStatus)
+        public async Task<IActionResult> OnPostAsync(int id, InvoiceStatus status)
         {
-            if(changeStatus == null)
-            {
-                return BadRequest();
-            }
+            Invoice = await Context.Invoice.FirstAsync(m => m.InvoiceId == id);
 
-            var isAdmin = User.IsInRole(Constants.InvoiceAdminsRole);
+            if (Invoice == null)
+                return NotFound();
 
-            if (isAdmin == false)
+            var invoiceOperation = status == InvoiceStatus.Approve 
+                ? InvoiceOperations.Approve
+                : InvoiceOperations.Reject;
+
+            var isAuthorized = await AuthorizationService.AuthorizeAsync(
+                User, Invoice, invoiceOperation);
+
+            if (isAuthorized.Succeeded == false)
                 return Forbid();
+
+            Invoice.Status = status;
+
+            Context.Invoice.Update(Invoice);
+
+            await Context.SaveChangesAsync();
 
             return RedirectToPage("./Index");
         }

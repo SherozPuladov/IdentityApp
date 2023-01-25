@@ -1,4 +1,11 @@
 ﻿@page
+
+@using IdentityApp.Authorization
+@using IdentityApp.Models
+@using Microsoft.AspNetCore.Authorization
+
+@inject IAuthorizationService AuthorizationService
+
 @model IdentityApp.Pages.Invoices.DetailsModel
 
 @{
@@ -38,7 +45,39 @@
     </dl>
 </div>
 
+@{
+    var isAuthorized = await AuthorizationService.AuthorizeAsync(
+                User, Model.Invoice, InvoiceOperations.Reject);
+
+    @if (isAuthorized.Succeeded)
+    {
+        @if (Model.Invoice.Status != InvoiceStatus.Approve)
+        {
+            <form style="display:inline;" method="post">
+                <input hidden name="id" value="@Model.Invoice.InvoiceId">
+                <input hidden name="status" value="@InvoiceStatus.Approve">
+                <button type="submit" class="btn btn-xs btn-success">Approve</button>
+            </form>
+        }
+
+        @if (Model.Invoice.Status != InvoiceStatus.Reject)
+        {
+            <form style="display:inline;" method="post">
+                <input hidden name="id" value="@Model.Invoice.InvoiceId">
+                <input hidden name="status" value="@InvoiceStatus.Reject">
+                <button type="submit" class="btn btn-xs btn-danger">Reject</button>
+            </form>
+        }
+    }
+}
+
 <div>
-    <a asp-page="./Edit" asp-route-id="@Model.Invoice?.InvoiceId">Edit</a> |
+    @if(isAuthorized.Succeeded == false)
+    {
+        <a asp-page="./Edit" asp-route-id="@Model.Invoice?.InvoiceId">Edit</a>
+    }
+    
     <a asp-page="./Index">Back to List</a>
 </div>
+
+
