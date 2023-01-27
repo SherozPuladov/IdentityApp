@@ -49,8 +49,16 @@ var app = builder.Build();
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
-    await SeedData.Initialize(services, "manager@demo.com", "Test@1234567890", Constants.InvoiceManagersRole);
-    await SeedData.Initialize(services, "admin@demo.com", "Admin@1234567890", Constants.InvoiceAdminsRole);
+
+    var context = services.GetRequiredService<ApplicationDbContext>();
+
+    context.Database.Migrate();
+
+    var seedUserManagerPass = builder.Configuration.GetValue<string>("SeedUserManagerPass");
+    var seedUserAdminPass = builder.Configuration.GetValue<string>("SeedUserAdminPass");
+
+    await SeedData.Initialize(services, "manager@demo.com", seedUserManagerPass, Constants.InvoiceManagersRole);
+    await SeedData.Initialize(services, "admin@demo.com", seedUserAdminPass, Constants.InvoiceAdminsRole);
 }
 
     // Configure the HTTP request pipeline.
