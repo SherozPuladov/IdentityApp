@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using IdentityApp.Data;
 using IdentityApp.Models;
@@ -11,71 +6,76 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using IdentityApp.Authorization;
 
-namespace IdentityApp.Pages.Invoices
+namespace IdentityApp.Pages.Invoices;
+
+public class DetailsModel : DI_BasePageModel
 {
-    public class DetailsModel : DI_BasePageModel
+    public DetailsModel(
+        ApplicationDbContext context,
+        IAuthorizationService authorizationService,
+        UserManager<IdentityUser> userManager)
+        : base(context, authorizationService, userManager)
     {
-        public DetailsModel(
-            ApplicationDbContext context,
-            IAuthorizationService authorizationService,
-            UserManager<IdentityUser> userManager)
-            : base(context, authorizationService, userManager)
+    }
+
+    public Invoice Invoice { get; set; }
+
+    public async Task<IActionResult> OnGetAsync(int? id)
+    {
+        if (id == null || Context.Invoice == null)
         {
+            return NotFound();
         }
 
-        public Invoice Invoice { get; set; }
-
-        public async Task<IActionResult> OnGetAsync(int? id)
+        Invoice = await Context.Invoice
+            .FirstOrDefaultAsync(m => m.InvoiceId == id);
+        
+        if (Invoice == null)
         {
-            if (id == null || Context.Invoice == null)
-            {
-                return NotFound();
-            }
+            return NotFound();
+        }
 
-            Invoice = await Context.Invoice.FirstOrDefaultAsync(m => m.InvoiceId == id);
-            
-            if (Invoice == null)
-            {
-                return NotFound();
-            }
-
-            var isCreator = await AuthorizationService.AuthorizeAsync(
+        var isCreator = await AuthorizationService
+            .AuthorizeAsync(
                 User, Invoice, InvoiceOperations.Read);
 
-            var isManager = User.IsInRole(Constants.InvoiceManagersRole);
+        var isManager = User.IsInRole(Constants.InvoiceManagersRole);
 
-            var isAdmin = User.IsInRole(Constants.InvoiceAdminsRole);
+        var isAdmin = User.IsInRole(Constants.InvoiceAdminsRole);
 
-            if (isCreator.Succeeded == false && isManager == false && isAdmin == false)
-                return Forbid();
+        if (isCreator.Succeeded == false 
+                && isManager == false 
+                && isAdmin == false)
+            return Forbid();
 
-            return Page();
-        }
+        return Page();
+    }
 
-        public async Task<IActionResult> OnPostAsync(int id, InvoiceStatus status)
-        {
-            Invoice = await Context.Invoice.FirstAsync(m => m.InvoiceId == id);
+    public async Task<IActionResult> OnPostAsync(int id, InvoiceStatus status)
+    {
+        Invoice = await Context.Invoice
+            .FirstAsync(m => m.InvoiceId == id);
 
-            if (Invoice == null)
-                return NotFound();
+        if (Invoice == null)
+            return NotFound();
 
-            var invoiceOperation = status == InvoiceStatus.Approve 
-                ? InvoiceOperations.Approve
-                : InvoiceOperations.Reject;
+        var invoiceOperation = status == InvoiceStatus.Approve 
+            ? InvoiceOperations.Approve
+            : InvoiceOperations.Reject;
 
-            var isAuthorized = await AuthorizationService.AuthorizeAsync(
+        var isAuthorized = await AuthorizationService
+            .AuthorizeAsync(
                 User, Invoice, invoiceOperation);
 
-            if (isAuthorized.Succeeded == false)
-                return Forbid();
+        if (isAuthorized.Succeeded == false)
+            return Forbid();
 
-            Invoice.Status = status;
+        Invoice.Status = status;
 
-            Context.Invoice.Update(Invoice);
+        Context.Invoice.Update(Invoice);
 
-            await Context.SaveChangesAsync();
+        await Context.SaveChangesAsync();
 
-            return RedirectToPage("./Index");
-        }
+        return RedirectToPage("./Index");
     }
 }

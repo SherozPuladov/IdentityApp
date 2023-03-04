@@ -40,6 +40,7 @@ builder.Services.AddAuthorization(options =>
         .Build();
 });
 
+// Add Authorization Handlers
 builder.Services.AddScoped<IAuthorizationHandler, InvoiceCreatorAuthorizationHandler>();
 builder.Services.AddSingleton<IAuthorizationHandler, InvoiceManagerAuthorizationHandler>();
 builder.Services.AddSingleton<IAuthorizationHandler, InvoiceAdminAuthorizationHadler>();
@@ -54,11 +55,17 @@ using (var scope = app.Services.CreateScope())
 
     context.Database.Migrate();
 
-    var seedUserManagerPass = builder.Configuration.GetValue<string>("SeedUserManagerPass");
-    var seedUserAdminPass = builder.Configuration.GetValue<string>("SeedUserAdminPass");
+    var seedUserManagerPass = builder.Configuration
+        .GetValue<string>("SeedUserManagerPass");
+    var seedUserAdminPass = builder.Configuration
+        .GetValue<string>("SeedUserAdminPass");
 
-    await SeedData.Initialize(services, "manager@demo.com", seedUserManagerPass, Constants.InvoiceManagersRole);
-    await SeedData.Initialize(services, "admin@demo.com", seedUserAdminPass, Constants.InvoiceAdminsRole);
+    await SeedData.Initialize(
+        services, "manager@demo.com", 
+        seedUserManagerPass, Constants.InvoiceManagersRole);
+    await SeedData.Initialize(
+        services, "admin@demo.com", 
+        seedUserAdminPass, Constants.InvoiceAdminsRole);
 }
 
     // Configure the HTTP request pipeline.

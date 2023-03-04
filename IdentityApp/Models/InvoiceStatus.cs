@@ -1,10 +1,8 @@
-﻿
-namespace IdentityApp
+﻿namespace IdentityApp;
+
+public enum InvoiceStatus
 {
-    public enum InvoiceStatus
-    {
-        Submitted,
-        Approve,
-        Reject
-    }
+    Submitted,
+    Approve,
+    Reject
 }

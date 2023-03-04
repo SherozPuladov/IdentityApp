@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using IdentityApp.Data;
 using IdentityApp.Models;
@@ -30,19 +24,19 @@ namespace IdentityApp.Pages.Invoices
         public async Task<IActionResult> OnGetAsync(int? id)
         {
             if (id == null || Context.Invoice == null)
-            {
                 return NotFound();
-            }
 
-            Invoice =  await Context.Invoice.FirstOrDefaultAsync(m => m.InvoiceId == id);
+
+            Invoice = await Context.Invoice
+                .FirstOrDefaultAsync(m => m.InvoiceId == id);
 
             if (Invoice == null)
-            {
                 return NotFound();
-            }
 
-            var isAuthorized = await AuthorizationService.AuthorizeAsync(
-                User, Invoice, InvoiceOperations.Update);
+
+            var isAuthorized = await AuthorizationService
+                .AuthorizeAsync(
+                    User, Invoice, InvoiceOperations.Update);
 
             var isAdmin = User.IsInRole(Constants.InvoiceAdminsRole);
 
@@ -64,8 +58,9 @@ namespace IdentityApp.Pages.Invoices
 
             Invoice.CreatorId = invoice.CreatorId;
 
-            var isAuthorized = await AuthorizationService.AuthorizeAsync(
-                User, Invoice, InvoiceOperations.Update);
+            var isAuthorized = await AuthorizationService
+                .AuthorizeAsync(
+                    User, Invoice, InvoiceOperations.Update);
 
             var isAdmin = User.IsInRole(Constants.InvoiceAdminsRole);
 
@@ -83,13 +78,10 @@ namespace IdentityApp.Pages.Invoices
             catch (DbUpdateConcurrencyException)
             {
                 if (!InvoiceExists(Invoice.InvoiceId))
-                {
                     return NotFound();
-                }
                 else
-                {
                     throw;
-                }
+                
             }
 
             return RedirectToPage("./Index");
