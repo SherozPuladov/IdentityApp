@@ -178,7 +178,7 @@ WhatsApp: +992988580300
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+Links to Used Frameworks and Libraries
 
 * [Asp.Net](https://github.com/aspnet/Docs) - framework for building web apps and services with .NET and C#
 * [Entity Framework Core](https://github.com/dotnet/efcore) - data access technology
