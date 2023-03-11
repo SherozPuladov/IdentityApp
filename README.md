@@ -25,18 +25,6 @@
     <img src="IdentityAppImages/Home-page-IdentityApp.png" alt="Logo">
   </a>
   
-  <p align="center">
-    An awesome README template to jumpstart your projects!
-    <br />
-    <a href="https://github.com/SherozPuladov/IdentityApp"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/SherozPuladov/IdentityApp">View Demo</a>
-    ·
-    <a href="https://github.com/SherozPuladov/IdentityApp/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/SherozPuladov/IdentityApp/issues">Request Feature</a>
-  </p>
 </div>
 
 
@@ -104,7 +92,16 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Used Nuget Packages
 
+* Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore | 6.0.11
+* Microsoft.AspNetCore.Identity.EntityFrameworkCore | 6.0.11
+* Microsoft.AspNetCore.Identity.UI | 6.0.11
+* Microsoft.EntityFrameworkCore.SqlServer | 6.0.13
+* Microsoft.EntityFrameworkCore.Tools | 6.0.13
+* Microsoft.VisualStudio.Web.CodeGeneration.Design | 6.0.11
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 ## Getting Started
