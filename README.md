@@ -18,12 +18,13 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
+  
+  <h3 align="center">Identity App</h3>
+
   <a href="https://github.com/SherozPuladov/IdentityApp">
     <img src="IdentityAppImages/Home-page-IdentityApp.png" alt="Logo">
   </a>
-
-  <h3 align="center">Identity App</h3>
-
+  
   <p align="center">
     An awesome README template to jumpstart your projects!
     <br />
