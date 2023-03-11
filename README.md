@@ -7,7 +7,11 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-<h1 align="center">Identity App</h1>
+<h1 align="left">Identity App</h1>
+
+<p>
+  Service for processing Invoices. With support for different levels of access. Ability to register new users. Account setup. And much more.
+</p>
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -20,16 +24,6 @@
 
 <!-- PROJECT LOGO -->
 <br />
-<div align="center">
-  
-  
-
-  <a href="https://github.com/SherozPuladov/IdentityApp">
-    <img src="IdentityAppImages/Home-page-IdentityApp.png" alt="Logo">
-  </a>
-  
-</div>
-
 
 
 <!-- TABLE OF CONTENTS -->
