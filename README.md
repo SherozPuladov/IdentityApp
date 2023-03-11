@@ -6,6 +6,9 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+
+<h1 align="center">Identity App</h1>
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -19,7 +22,7 @@
 <br />
 <div align="center">
   
-  <h3 align="center">Identity App</h3>
+  
 
   <a href="https://github.com/SherozPuladov/IdentityApp">
     <img src="IdentityAppImages/Home-page-IdentityApp.png" alt="Logo">
