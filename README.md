@@ -19,7 +19,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/SherozPuladov/IdentityApp">
-    <img src="IdentityAppImages/Home-page-IdentityApp.png" alt="Logo" width="80" height="80">
+    <img src="IdentityAppImages/Home-page-IdentityApp.png" alt="Logo">
   </a>
 
   <h3 align="center">Identity App</h3>
