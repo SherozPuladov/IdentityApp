@@ -76,14 +76,8 @@ Use the `BLANK_README.md` to get started.
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+This section lists all the main frameworks and libraries used in the project.
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![JQuery][JQuery.com]][JQuery-url]
 
@@ -108,7 +102,8 @@ To get a local copy up and running follow these simple example steps.
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+The installation is no different from the usual installation of other .Net projects.
+All dependencies and services will be installed automatically.
 
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
@@ -169,11 +164,12 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Sheroz Umidovich Puladov:  sherozpulatov3@gmail.com
 
+Project Link: [https://github.com/SherozPuladov/IdentityApp](https://github.com/SherozPuladov/IdentityApp)
+
 Telegram: +992922225248
 
 WhatsApp: +992988580300
 
-Project Link: [https://github.com/SherozPuladov/IdentityApp](https://github.com/SherozPuladov/IdentityApp)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -183,15 +179,6 @@ Project Link: [https://github.com/SherozPuladov/IdentityApp](https://github.com/
 ## Acknowledgments
 
 Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
 
 * [Asp.Net](https://github.com/aspnet/Docs) - framework for building web apps and services with .NET and C#
 * [Entity Framework Core](https://github.com/dotnet/efcore) - data access technology
