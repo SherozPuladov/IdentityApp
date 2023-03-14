@@ -44,7 +44,6 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -104,20 +103,6 @@ To get a local copy up and running follow these simple example steps.
 
 The installation is no different from the usual installation of other .Net projects.
 All dependencies and services will be installed automatically.
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -181,6 +166,9 @@ WhatsApp: +992988580300
 Links to Used Frameworks and Libraries
 
 * [Asp.Net](https://github.com/aspnet/Docs) - framework for building web apps and services with .NET and C#
+
+
+* [Blazor]() - free and open source web platform that allows developers to build web applications using C# and HTML
 * [Entity Framework Core](https://github.com/dotnet/efcore) - data access technology
 * [.Net Runtime](https://github.com/dotnet/runtime) - cross-platform runtime for cloud, mobile, desktop, and IoT apps
 * [Razor](https://github.com/dotnet/razor) - the Razor compiler and tooling for working with Razor syntax (.cshtml, .razor)
