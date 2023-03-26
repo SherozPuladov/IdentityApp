@@ -45,22 +45,22 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## О проекте
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+На GitHub доступно множество отличных шаблонов README; однако я не нашел тот, который действительно соответствовал бы моим потребностям, поэтому я создал этот улучшенный. Я хочу создать настолько удивительный шаблон README, что он будет последним, который вам когда-либо понадобится — я думаю, что это все.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+Вот почему:
+* Ваше время должно быть сосредоточено на создании чего-то удивительного. Проект, который решает проблему и помогает другим
+* Вы не должны выполнять одни и те же задачи снова и снова, например, создавать файл README с нуля.
+* Вы должны применять принципы DRY до конца своей жизни :smile:
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+Конечно, ни один шаблон не подойдет для всех проектов, поскольку ваши потребности могут быть разными. Так что в ближайшее время добавлю еще. Вы также можете предложить изменения, разветвив этот репозиторий и создав запрос на включение или открыв вопрос. Спасибо всем, кто внес свой вклад в расширение этого шаблона!
 
-Use the `BLANK_README.md` to get started.
+Для начала используйте 'BLANK_README.md' .
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">вернуться к началу</a>)</p>
 
 
 
@@ -71,7 +71,7 @@ This section lists all the main frameworks and libraries used in the project.
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![JQuery][JQuery.com]][JQuery-url]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">вернуться к началу</a>)</p>
 
 ### Used Nuget Packages
 
@@ -82,7 +82,7 @@ This section lists all the main frameworks and libraries used in the project.
 * Microsoft.EntityFrameworkCore.Tools | 6.0.13
 * Microsoft.VisualStudio.Web.CodeGeneration.Design | 6.0.11
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">вернуться к началу</a>)</p>
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -95,7 +95,7 @@ To get a local copy up and running follow these simple example steps.
 The installation is no different from the usual installation of other .Net projects.
 All dependencies and services will be installed automatically.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">вернуться к началу</a>)</p>
 
 
 
@@ -106,7 +106,7 @@ Use this space to show useful examples of how a project can be used. Additional 
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">вернуться к началу</a>)</p>
 
 
 
@@ -122,7 +122,7 @@ Don't forget to give the project a star! Thanks again! Any contributions you mak
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">вернуться к началу</a>)</p>
 
 
 
@@ -131,7 +131,7 @@ Don't forget to give the project a star! Thanks again! Any contributions you mak
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">вернуться к началу</a>)</p>
 
 
 
@@ -147,7 +147,7 @@ Telegram: +992922225248
 WhatsApp: +992988580300
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">вернуться к началу</a>)</p>
 
 
 
@@ -164,7 +164,7 @@ Links to Used Frameworks and Libraries
 * [.Net Runtime](https://github.com/dotnet/runtime) - cross-platform runtime for cloud, mobile, desktop, and IoT apps
 * [Razor](https://github.com/dotnet/razor) - the Razor compiler and tooling for working with Razor syntax (.cshtml, .razor)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">вернуться к началу</a>)</p>
 
 
 
