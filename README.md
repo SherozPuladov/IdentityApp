@@ -24,18 +24,18 @@
     <li>
       <a href="#about-the-project">О проекте</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Построенный с помощью</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Начиная</a>
+      <a href="#getting-started">Приступая к работе</a>
       <ul>
         <li><a href="#prerequisites">Предпосылки</a></li>
         <li><a href="#installation">Установка</a></li>
       </ul>
     </li>
     <li><a href="#usage">Применение</a></li>
-    <li><a href="#contributing">Вклад</a></li>
+    <li><a href="#contributing">Содействие</a></li>
     <li><a href="#license">Лицензия</a></li>
     <li><a href="#contact">Контакты</a></li>
     <li><a href="#acknowledgments">Благодарности</a></li>
@@ -64,16 +64,16 @@
 
 
 
-### Built With
+### Построенный с помощью
 
-This section lists all the main frameworks and libraries used in the project.
+В этом разделе перечислены все основные фреймворки и библиотеки, используемые в проекте.
 
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![JQuery][JQuery.com]][JQuery-url]
 
 <p align="right">(<a href="#readme-top">вернуться к началу</a>)</p>
 
-### Used Nuget Packages
+### Использованные пакеты Nuget
 
 * Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore | 6.0.11
 * Microsoft.AspNetCore.Identity.EntityFrameworkCore | 6.0.11
@@ -85,62 +85,62 @@ This section lists all the main frameworks and libraries used in the project.
 <p align="right">(<a href="#readme-top">вернуться к началу</a>)</p>
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Приступая к работе
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Это пример того, как вы можете дать инструкции по настройке вашего проекта локально.
+Чтобы запустить локальную копию, выполните следующие простые действия в качестве примера.
 
-### Installation
+### Установка
 
-The installation is no different from the usual installation of other .Net projects.
-All dependencies and services will be installed automatically.
+Установка ничем не отличается от обычной установки других проектов .Net.
+Все зависимости и службы будут установлены автоматически.
 
 <p align="right">(<a href="#readme-top">вернуться к началу</a>)</p>
 
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Использование
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Используйте это пространство, чтобы показать полезные примеры того, как можно использовать проект. Дополнительные скриншоты, примеры кода и демо-версии хорошо работают в этом пространстве. Вы также можете ссылаться на другие ресурсы.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+_ Для получения дополнительных примеров, пожалуйста, обратитесь к [Документация](https://example.com)_
 
 <p align="right">(<a href="#readme-top">вернуться к началу</a>)</p>
 
 
 
 <!-- CONTRIBUTING -->
-## Contributing
+## Содействие
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again! Any contributions you make are **greatly appreciated**.
+Если у вас есть предложение, которое сделало бы это лучше, разместите fork в репозитории и создайте запрос на извлечение. Вы также можете просто открыть проблему с тегом "enhancement".
+Не забудьте поставить проекту звездочку! Еще раз спасибо! Мы **высоко ценим любой ваш вклад**.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. Разветвите проект
+2. Создайте свою ветку функций (`git checkout -b feature/AmazingFeature`)
+3. Зафиксируйте свои изменения (`git commit -m 'Add some AmazingFeature'`)
+4. Перейдите в ветку(`git push origin feature/AmazingFeature`)
+5. Откройте запрос на извлечение
 
 <p align="right">(<a href="#readme-top">вернуться к началу</a>)</p>
 
 
 
 <!-- LICENSE -->
-## License
+## Лицензия
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Распространяется по лицензии MIT. Дополнительную информацию смотрите в разделе `LICENSE`.
 
 <p align="right">(<a href="#readme-top">вернуться к началу</a>)</p>
 
 
 
 <!-- CONTACT -->
-## Contact
+## Контакты
 
 Sheroz Umidovich Puladov:  sherozpulatov3@gmail.com
 
-Project Link: [https://github.com/SherozPuladov/IdentityApp](https://github.com/SherozPuladov/IdentityApp)
+Ссылка на проект: [https://github.com/SherozPuladov/IdentityApp](https://github.com/SherozPuladov/IdentityApp)
 
 Telegram: +992922225248
 
@@ -152,17 +152,17 @@ WhatsApp: +992988580300
 
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+## Благодарности
 
-Links to Used Frameworks and Libraries
+Ссылки на используемые фреймворки и библиотеки
 
-* [Asp.Net](https://github.com/aspnet/Docs) - framework for building web apps and services with .NET and C#
+* [Asp.Net](https://github.com/aspnet/Docs) - фреймворк для создания веб-приложений и сервисов с помощью .NET и C#
 
 
-* [Blazor]() - free and open source web platform that allows developers to build web applications using C# and HTML
-* [Entity Framework Core](https://github.com/dotnet/efcore) - data access technology
-* [.Net Runtime](https://github.com/dotnet/runtime) - cross-platform runtime for cloud, mobile, desktop, and IoT apps
-* [Razor](https://github.com/dotnet/razor) - the Razor compiler and tooling for working with Razor syntax (.cshtml, .razor)
+* [Blazor](https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor) - бесплатная веб-платформа с открытым исходным кодом, которая позволяет разработчикам создавать веб-приложения с использованием C# и HTML
+* [Entity Framework Core](https://github.com/dotnet/efcore) - позволяет работать с данными в форме специфических для домена объектов и свойств (например, с клиентами и их адресами) без необходимости учитывать формат базовых таблиц и столбцов базы данных, где хранятся эти данные
+* [.Net Runtime](https://github.com/dotnet/runtime) - кроссплатформенная среда выполнения для облачных, мобильных, настольных приложений и IoT приложений
+* [Razor](https://github.com/dotnet/razor) - компилятор Razor и инструментарий для работы с синтаксисом Razor (.cshtml, .razor)
 
 <p align="right">(<a href="#readme-top">вернуться к началу</a>)</p>
 
