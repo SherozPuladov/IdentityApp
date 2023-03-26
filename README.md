@@ -10,7 +10,7 @@
 <h1 align="left">Identity App</h1>
 
 <p>
-  Service for processing Invoices. With support for different levels of access. Ability to register new users. Account setup. And much more.
+  Сервис для обработки счетов. С поддержкой разных уровней доступа. С возможностью регистрации новых пользователей, настройки аккаунта, и многое другое.
 </p>
 
 <!-- PROJECT LOGO -->
@@ -19,26 +19,26 @@
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Table of Contents</summary>
+  <summary>Оглавление</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#about-the-project">О проекте</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#getting-started">Начиная</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#prerequisites">Предпосылки</a></li>
+        <li><a href="#installation">Установка</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#usage">Применение</a></li>
+    <li><a href="#contributing">Вклад</a></li>
+    <li><a href="#license">Лицензия</a></li>
+    <li><a href="#contact">Контакты</a></li>
+    <li><a href="#acknowledgments">Благодарности</a></li>
   </ol>
 </details>
 
