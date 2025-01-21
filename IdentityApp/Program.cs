@@ -62,10 +62,10 @@ using (var scope = app.Services.CreateScope())
 
     await SeedData.Initialize(
         services, "manager@demo.com", 
-        seedUserManagerPass, Constants.InvoiceManagersRole);
+        "seedUserManagerPass", Constants.InvoiceManagersRole);
     await SeedData.Initialize(
         services, "admin@demo.com", 
-        seedUserAdminPass, Constants.InvoiceAdminsRole);
+        "seedUserAdminPass", Constants.InvoiceAdminsRole);
 }
 
     // Configure the HTTP request pipeline.
